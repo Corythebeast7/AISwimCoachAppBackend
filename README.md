@@ -5,12 +5,11 @@ A RESTful API backend for the AI Swim Coach application.
 ## Project Structure
 
 ```
-AISwimCoachAppBackend/
-├── handlers/       # Request handlers
-├── models/         # Data models
-├── routes/         # API route definitions
-├── go.mod          # Go module file
-├── main.go         # Application entry point
+AISwimCoachAppBackend/src/
+├── database/       # All data handling and storage
+├── rest/           # API route definitions and request handling
+├── service/        # Actionable services that perform work
+├── vo/             # Data models
 └── README.md       # This file
 ```
 
@@ -35,14 +34,6 @@ The server will start on `http://localhost:8080`.
 ### API Endpoints
 
 - `GET /api/health` - Health check endpoint to verify the API is running
-
-## Adding New Endpoints
-
-To add new endpoints to the API:
-
-1. Create handler functions in the `handlers` package
-2. Define data models in the `models` package if needed
-3. Add routes in the `routes` package
 
 ## Future Enhancements
 
